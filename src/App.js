@@ -13,6 +13,7 @@ function App() {
     <div>
       {/* <h2> lets get started</h2> */}
       <Bootsrap/>
+      <h1>Hello friends.....</h1>
       <Cards/>
 
       {/* <> */}
