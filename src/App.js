@@ -1,9 +1,10 @@
 // import React from "./Componets/BestReact/BestReact";
 // import ExpenceItem from "./Componets/ExpenseItem/ExpenseItem";
-import Bootsrap from "./Bootstrap/Bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Cards from "./Bootstrap/Card";
+// import Bootsrap from "./Bootstrap/Bootstrap";
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import Cards from "./Bootstrap/Card";
 // import Expence from "./Componets/Hello";
+import Birthdays from "./Componets/BirthDayRemainder/BirthDay";
 
 
 function App() {
@@ -13,12 +14,13 @@ function App() {
   return (
     <div>
       {/* <h2> lets get started</h2> */}
-      <Bootsrap/>
+      {/* <Bootsrap/>
     
-      <Cards/>
+      <Cards/> */}
       {/* <Expence></Expence> */}
 
       {/* <> */}
+      <Birthdays></Birthdays>
   
 {/*     
       <ExpenceItem
