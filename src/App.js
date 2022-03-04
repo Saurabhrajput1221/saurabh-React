@@ -3,7 +3,7 @@
 import Bootsrap from "./Bootstrap/Bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Cards from "./Bootstrap/Card";
-import Expence from "./Componets/Hello";
+// import Expence from "./Componets/Hello";
 
 
 function App() {
@@ -14,9 +14,9 @@ function App() {
     <div>
       {/* <h2> lets get started</h2> */}
       <Bootsrap/>
-      <h1>Hello friends.....</h1>
+    
       <Cards/>
-      <Expence></Expence>
+      {/* <Expence></Expence> */}
 
       {/* <> */}
   
