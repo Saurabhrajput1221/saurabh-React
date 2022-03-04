@@ -5,7 +5,7 @@
 // import Cards from "./Bootstrap/Card";
 // import Expence from "./Componets/Hello";
 import Birthdays from "./Componets/BirthDayRemainder/BirthDay";
-
+import './App.css'
 
 function App() {
   // let expenseDate = new Date(2022, 2, 28);
@@ -21,8 +21,8 @@ function App() {
 
       {/* <> */}
       <Birthdays></Birthdays>
-  
-{/*     
+
+      {/*     
       <ExpenceItem
         date={expenseDate}
         title={expenseTitle}

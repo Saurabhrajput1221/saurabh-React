@@ -1,24 +1,17 @@
 import React from "react";
 
-const List = ({ people, removeThisPerson }) => {
+const List = ({ people }) => {
   return (
     <>
-      {people.map((person, index) => {
+      {people.map((person) => {
         const { id, name, age, image } = person;
 
         return (
-          <div key={index} className="person">
-            <img src={image} alt={name} />
+          <div className="person">
+            <h1>{id}</h1>
+            <img src={image} />
             <div className="name">
-              <h4>
-                {name}{" "}
-                <i
-                  style={{ color: "red" }}
-                  className="fa fa-times"
-                  aria-hidden="true"
-                  onClick={() => removeThisPerson(id)}
-                ></i>
-              </h4>
+              <h4>{name}</h4>
               <p>{age} years</p>
             </div>
           </div>

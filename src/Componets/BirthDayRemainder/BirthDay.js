@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import people from "./Data";
 import data from "./Data";
 import List from "./List";
 
@@ -7,25 +8,27 @@ class Birthdays extends Component {
     super(props);
     this.state = {
       people: [],
-      loading: true,
+      people1:data
     };
-
+    // this.Reset=this.Reset.bind(this)
     this.clearAll = this.clearAll.bind(this);
-    this.removeThisPerson = this.removeThisPerson.bind(this);
+    
   }
   async componentDidMount() {
     const readDataPeople = await this.readData();
     if (readDataPeople.length) {
-      this.setState({ people: readDataPeople, loading: false });
+      this.setState({ people: readDataPeople });
     }
   }
 
-  //backend function which returns the data
   async readData() {
     return new Promise((resolve, reject) => {
-      setTimeout(() => resolve(data), 4000);
+      setTimeout(() => resolve(data));
     });
   }
+  // Reset(){
+  //   this.setState({people1});
+  // }
 
   clearAll() {
     this.setState({ people: [] });
@@ -33,26 +36,21 @@ class Birthdays extends Component {
 
   removeThisPerson = (id) => {
     this.setState({
-      people: this.state.people.filter((peeps) => peeps.id !== id),
-    });
-    // people = people.filter(peep=>peep.id!==id)
+      people: this.state.people.filter((peeps) => peeps.id !== id)    });
   };
   render() {
     return (
       <main>
         <section className="container">
-          {this.state.loading ? (
-            <h3>Loading...</h3>
-          ) : (
+          {
             <>
               <h3>{this.state.people.length} Birthdays Today</h3>
               <List
-                people={this.state.people}
-                removeThisPerson={this.removeThisPerson}
-              />
+                people={this.state.people}              />
               <button onClick={this.clearAll}>Clear All</button>
+              <button onClick={this.Reset}>Reset</button>
             </>
-          )}
+          }
         </section>
       </main>
     );
