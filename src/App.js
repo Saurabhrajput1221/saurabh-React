@@ -20,7 +20,8 @@ function App() {
       {/* <Expence></Expence> */}
 
       {/* <> */}
-      <Birthdays></Birthdays>
+      <h1> Hello</h1>
+      <Birthdays> </Birthdays>
 
       {/*     
       <ExpenceItem
