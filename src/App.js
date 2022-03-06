@@ -4,7 +4,8 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Cards from "./Bootstrap/Card";
 // import Expence from "./Componets/Hello";
-import Birthdays from "./Componets/BirthDayRemainder/BirthDay";
+// import Birthdays from "./Componets/BirthDayRemainder/BirthDay";
+import Surprise from './Componets/Tours/Surprise';
 import './App.css'
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
 
       {/* <> */}
       <h1> Hello Everyone</h1>
-      <Birthdays> </Birthdays>
+      <Surprise/>
+      {/* <Birthdays> </Birthdays> */}
 
       {/*     
       <ExpenceItem
