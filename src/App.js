@@ -20,7 +20,7 @@ function App() {
       {/* <Expence></Expence> */}
 
       {/* <> */}
-      <h1> Hello</h1>
+      <h1> Hello Everyone</h1>
       <Birthdays> </Birthdays>
 
       {/*     
