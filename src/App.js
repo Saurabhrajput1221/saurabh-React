@@ -21,8 +21,8 @@ function App() {
       {/* <Expence></Expence> */}
 
       {/* <> */}
-      <h1> Hello Everyone</h1>
-      <Surprise/>
+      {/* <h1> Hello Everyone</h1>
+      <Surprise/> */}
       {/* <Birthdays> </Birthdays> */}
 
       {/*     

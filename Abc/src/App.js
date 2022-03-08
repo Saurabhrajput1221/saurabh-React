@@ -1,5 +1,4 @@
-
-import SecondApp from "./Comp/MyReact";
+import Alpp from './Comp/BirthDay';
 import './App.css'
 
 
@@ -7,7 +6,7 @@ function App() {
  
   return (
     <div>
-    <SecondApp></SecondApp>
+    <Allp></Allp>
     </div>
   );
 }
