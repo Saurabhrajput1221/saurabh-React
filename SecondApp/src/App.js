@@ -1,5 +1,5 @@
 
-import SecondApp from "./Comp/MyReact";
+import SecondApp from "./Comp/List";
 import './App.css'
 
 
