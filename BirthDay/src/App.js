@@ -1,12 +1,12 @@
-import Alpp from './Comp/BirthDay';
 import './App.css'
+import Birthday from './Comp/BirthDay';
 
 
 function App() {
  
   return (
     <div>
-    <Allp></Allp>
+    <Birthday></Birthday>
     </div>
   );
 }

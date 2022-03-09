@@ -5,4 +5,4 @@ function Tiger(){
         </div>
     )
 }
-export default Tiger;
+export default Tiger
