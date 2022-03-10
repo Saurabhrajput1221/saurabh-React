@@ -1,5 +1,4 @@
-import Tiger from './Componets/Saurabh/Tiger';
-// import './App.css'
+
 
 function App() {
 
