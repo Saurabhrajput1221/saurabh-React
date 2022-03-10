@@ -16,7 +16,7 @@ function Tour({id,image,info,name,price,removeTour}) {
                          {readMore ? info : `${info.substring(0,200)}...`}
                          <button onClick={()=>setReadMore(!readMore)}>{readMore ? 'show less' : 'read more'}</button>
                      </p>
-                     <button className="delete-btn" onClick={()=>removeTour(id)}>not interested</button>
+                     {/* <button className="delete-btn" onClick={()=>removeTour(id)}>not interested</button> */}
                  </footer>
         </article>
     )
