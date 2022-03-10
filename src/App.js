@@ -1,38 +1,73 @@
-// import React from "./Componets/BestReact/BestReact";
-// import ExpenceItem from "./Componets/ExpenseItem/ExpenseItem";
-// import Bootsrap from "./Bootstrap/Bootstrap";
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import Cards from "./Bootstrap/Card";
-// import Expence from "./Componets/Hello";
-// import Birthdays from "./Componets/BirthDayRemainder/BirthDay";
-import Surprise from './Componets/Tours/Surprise';
-import './App.css'
+import React,{useState,useEffect} from "react";
+import ReactMarkdown from "react-markdown";
+import './App.css';
 
-function App() {
-  // let expenseDate = new Date(2022, 2, 28);
-  // let expenseTitle = "Dinner";
-  // let expenseAmount = 300;
-  return (
-    <div>
-      {/* <h2> lets get started</h2> */}
-      {/* <Bootsrap/>
-    
-      <Cards/> */}
-      {/* <Expence></Expence> */}
+function App(){
 
-      {/* <> */}
-      {/* <h1> Hello Everyone</h1>
-      <Surprise/> */}
-      {/* <Birthdays> </Birthdays> */}
+  const [markdown,setMarkdown] = useState("")
+  const [loading,setLoading] = useState(true)
 
-      {/*     
-      <ExpenceItem
-        date={expenseDate}
-        title={expenseTitle}
-        amount={expenseAmount}
-      ></ExpenceItem> */}
-    </div>
-  );
+  const handleChange = (e) =>{
+    setMarkdown(e.target.value)
+  }
+  
+  const changeLoadingVar = () => {
+    setLoading(false)
+  }
+
+  useEffect(() => {
+    setTimeout(changeLoadingVar,3000)
+  },[]);
+
+    if(loading){
+      return (<div><h1>Loading...</h1></div>)
+    }
+ 
+    return(
+      <div className="app">
+        <textarea onChange={handleChange}/>
+        <ReactMarkdown className="preview" children={markdown}/>
+      </div>
+    )
 }
 
 export default App;
+
+// class App extends React.Component{
+
+//   constructor(props){
+//     super(props)
+//     this.state = {
+//       markdown: "",
+//       loading: true
+//     }
+//     this.handleChange = this.handleChange.bind(this);
+//     this.changeLoadingVar = this.changeLoadingVar.bind(this);
+//   }
+//   handleChange(e){
+//     this.setState({
+//       markdown: e.target.value
+//     })
+//   }
+//   changeLoadingVar(){
+//     this.setState({
+//       loading: false
+//     })
+//   }
+
+//   componentDidMount(){
+//     setTimeout(this.changeLoadingVar,3000)
+//   }
+//   render(){
+//     if(this.state.loading){
+//       return (<div><h1>Loading...</h1></div>)
+//     }
+ 
+//     return(
+//       <div className="app">
+//         <textarea onChange={this.handleChange}/>
+//         <ReactMarkdown className="preview" children={this.state.markdown}/>
+//       </div>
+//     )
+//   }
+// }

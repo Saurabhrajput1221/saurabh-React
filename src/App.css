@@ -1,33 +1,25 @@
-body {
-  background-color: rgb(11, 27, 64);
+body{
+  background: #e8eaf1;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-  border: 2px solid black;
-  width: 300px;
-  padding-left: 10px;
-  box-shadow: 5px 10px black;
-  height: 85%;
-  background-color: yellow;
-}
-main {
-  display: flex;
-  justify-content: center; 
+
+.app{
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
 }
-.container button {
-  background-color: aqua;
-  color: black;
-  font-size: 25px;
-  margin-left: 25px;
-  margin: 10px;
-  border-radius: 10px;
+
+textarea{
+  background: #eff1f5;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
 }
-.container .person {
-  display: flex;
-}
-.container .person img {
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
+
+.preview{
+  padding-left: 20px;
+  padding-right: 20px;
 }

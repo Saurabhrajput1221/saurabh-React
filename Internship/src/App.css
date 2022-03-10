@@ -1,3 +1,21 @@
+body {
+  background-color: orange;
+  align-items: center;
+  text-align: center;
+}
+button{
+  background-color: rgb(3, 250, 3);
+  height:30px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 60%;
+  
+
+}
+.whatsapp{
+ 
+  margin-right: 10px;
+}
 /* body {
   background-color: rgb(11, 27, 64);
 }

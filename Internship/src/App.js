@@ -1,14 +1,22 @@
-
-import One from './Component/One'
-import './App.css'
-import Two from './Component/Two';
+import React from "react";
+import "./App.css";
+import YoutubeEmbed from "./Component/Youtube";
+import { FaWhatsapp } from "react-icons/fa";
+import DropDown from "./Component/DropDown";
+// import {FontAwesomeIcon, Card} from 'react-bootstrap'
+// import{Switch , Route, Link, BrowserRouter}  from "react-router-dom"
 
 function App() {
- 
   return (
-    <div>
-  <One></One>
-  <Two></Two>
+    <div className="App">
+      <h1>Youtube Title</h1>
+      <YoutubeEmbed embedId="1" />
+      {/* {<FontAwesomeIcon icon='fab fa-whatsapp'/>} */}
+      <button type="button">
+        <FaWhatsapp className="whatsapp" />
+        Save Post in Whatsapp
+      </button>
+      <DropDown />
     </div>
   );
 }
