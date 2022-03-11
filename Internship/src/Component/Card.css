@@ -1,0 +1,10 @@
+button {
+  background-color: rgb(3, 250, 3);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card {
+  margin: auto;
+  border-radius: 15px;
+}

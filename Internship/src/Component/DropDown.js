@@ -1,22 +1,36 @@
-import { DropDownMenu, Dropdown } from 'react-bootstrap'
-function DropDown(){
-    return(
-        <>
-        <h1>Dropdown</h1>
-        <DropDownMenu>
-        <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-          Dropdown Button
-        </Dropdown.Toggle>
-      
-        <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-      </DropDownMenu>
+import { Accordion } from "react-bootstrap";
+import "./DropDown.css";
+import Cards from "./Cards";
+function DropDown() {
+  return (
+    <>
+      <Accordion defaultActiveKey={["0"]} alwaysOpen>
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>Accordion Item #1</Accordion.Header>
+          <Accordion.Body>
+            <Cards />
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1" alwaysOpen>
+          <Accordion.Header>Accordion Item #2</Accordion.Header>
+          <Accordion.Body>
+            <Cards />
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="3" alwaysOpen>
+          <Accordion.Header>Accordion Item #3</Accordion.Header>
+          <Accordion.Body>
+            <Cards />
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="4" alwaysOpen>
+          <Accordion.Header>Accordion Item #4</Accordion.Header>
+          <Accordion.Body>
+            <Cards />
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
     </>
-    )
+  );
 }
 export default DropDown;
