@@ -1,0 +1,31 @@
+.preNav{
+    background-color: rgb(29, 28, 28);
+    display: grid;
+    grid-template-columns:  5fr 2fr;
+    color: white;
+    height: 30px;
+
+
+}
+
+.preNav> div > a{
+
+    color: rgb(180, 180, 180);
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    text-decoration: none;
+    align-items: center;
+    padding-top: 5px;
+  
+}
+.PreNavbar > div >span{
+    color: rgba(180, 180, 180, 0.644);
+    font-size: 12px;
+    font-weight: 100;
+}
+.div2{
+    position: relative;
+    text-align: right;
+}
+
