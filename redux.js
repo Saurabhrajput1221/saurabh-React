@@ -9,7 +9,10 @@ const INCREMENT= 'INCREMENT';
     type: INCREMENT
 }
 // Reducer
-//1. Initial State
+// 1. Initial State
+// Reducer
+// 1. Initial State
+
  
 
 
