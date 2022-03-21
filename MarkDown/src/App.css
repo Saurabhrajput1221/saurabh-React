@@ -1,0 +1,54 @@
+<<<<<<< HEAD
+body{
+  background: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+textarea{
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 250px;
+  width: 100%;
+  
+}
+
+.preview{
+  padding-left: 20px;
+  padding-right: 20px;
+=======
+body{
+  background: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+textarea{
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 250px;
+  width: 100%;
+  
+}
+
+.preview{
+  padding-left: 20px;
+  padding-right: 20px;
+>>>>>>> 1733c080f97aa4df1573bb8ad839736c056949fb
+}
