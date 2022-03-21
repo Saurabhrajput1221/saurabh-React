@@ -1,9 +1,8 @@
-
 import React, { useEffect } from "react";
-// import "./App.css";
+import "./App.css";
 import Login from "./components/Login/Login";
 import { getAccessToken } from "./components/Spotify/Spotify";
-// import SpotifyWebApi from "spotify-web-api-js";
+import SpotifyWebApi from "spotify-web-api-js";
 
 import Player from "./components/Player/Player";
 import { useDataLayerValue } from "./DataLayer";
@@ -19,7 +18,7 @@ import { useDataLayerValue } from "./DataLayer";
 //Problem: Prop Drilling => Solution: Context API
 //Problem: Redux => solution: Reducer, DataLayer or SateProvider
 
-// const spotifyOb = new SpotifyWebApi();
+const spotifyOb = new SpotifyWebApi();
 
 function App() {
   //deployed
@@ -79,48 +78,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // import './App.css';
-// import React from "react";
-// import PreNav from "./AllComp/PreNav";
-// import MyNav from "./AllComp/Nav";
-
-
-// function App() {
-//   return(
-//     <>
-//     {/* <h1>I am still here...</h1> */}
-//     <PreNav/>
-//     <MyNav/>
-//     </>
-//   )
-// }
-
-
-// export default App;
